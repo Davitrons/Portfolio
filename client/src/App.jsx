@@ -1,20 +1,21 @@
-import { useEffect, useState } from 'react'
-import './App.css'
+//import { useEffect, useState } from 'react';
+import Navbar from './components/layout/Navbar';
+import Hero from './components/Hero';
+import About from './components/About';
+import Projects from './components/Projects';
+import Contact from './components/Contact';
+import Footer from './components/layout/Footer';
 
 function App() {
-  const [mensaje, setMensaje] = useState('');
-
-  useEffect(() => {
-    fetch('http://localhost:5000/api/hello')
-      .then(res => res.json())
-      .then(data => setMensaje(data.message));
-  }, []);
-
   return (
-    <div>
-      <h1>Mi Portfolio</h1>
-      <p>{mensaje}</p>
-    </div>
+    <>
+      <Navbar />
+      <Hero />
+      <About />
+      <Projects />
+      <Contact />
+      <Footer />
+    </>
   );
 }
 
