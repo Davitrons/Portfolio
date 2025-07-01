@@ -50,7 +50,7 @@ export default function Hero() {
             </p>
           
             <div className="d-flex justify-content-center gap-3 mt-4 flex-wrap">
-              <a href="/cv.pdf" download className="btn btn-warning">
+              <a href="/cv.pdf" /* download */ className="btn btn-warning">
                 📄 Descargar CV
               </a>
               <a
